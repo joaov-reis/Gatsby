@@ -5,8 +5,9 @@ import Layout from "../components/layout"
 export default function IndexPage () {
   return (
     <Layout title="Home Page">
-      <h1>Olá Mundo Gatsby!</h1>
+      <h3>Olá Mundo Gatsby!</h3>
       <p>Iniciando com os primeiros componentes do React no Gatsby</p>
+      <p>Outro paragrafo</p>
       <Link to="/about">Sobre</Link>
     </Layout>
   )
