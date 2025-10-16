@@ -1,27 +1,23 @@
 import * as React from "react"
+import "./layout.css"
+import Footer from "./footer.js"
 import { Link } from "gatsby"
-import {container, navLinks, navLinkItem, navLinkText} from "./layout.module.css"
 
-export default function Layout({title, children}) {
+export default function Layout({children}) { //Desestruturação de objeto
   return (
-    <div className={container}>
-      <hr />
-      <p>Cabeçalho</p>
-      <nav>
-        <ul className={navLinks}>
-          <li className={navLinkItem}><Link className={navLinkText} to="/">Início</Link></li>
-          <li className={navLinkItem}><Link className={navLinkText} to="/about">Sobre</Link></li>
-          <li className={navLinkItem}><Link className={navLinkText} to="/fornecedores">fornecedores</Link></li>
-        </ul>
-      </nav>
-      <hr />
-      <main>
-        <h1>{title}</h1>
+    <main className="layout">
+      <div className="header">
+        <h3>Estudos de Jamstack - Gatsby</h3>
+        <nav className="topnav">
+          <Link to="/">Início</Link>
+          <Link to="/pagina2">Dados Externos</Link>
+          <Link to="/pagina3">Dados Internos</Link>
+        </nav>
+      </div>
+      <div className="main">
         {children}
-      </main>
-      <hr />
-        <p>Rodapé</p>
-      <hr />
-    </div>
+      </div>
+      <Footer copyrightYear={2025}/>
+    </main>
   )
 }
