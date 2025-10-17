@@ -1,6 +1,7 @@
 import * as React from "react" //Pega tudo que está dentro do módulo "React"
 import { Link } from "gatsby"  //Pega tudosomente o elemento "link" que está dentro do módulo "gatsby"
 import Layout from "../components/layout"
+import Ufs from "../components/Ufs"
 
 export default function IndexPage () {
   return (
@@ -8,7 +9,6 @@ export default function IndexPage () {
       <h3>Olá Mundo Gatsby!</h3>
       <p>primeiro paragrafo</p>
       <p>segundo paragrafo</p>
-      <Link to="/about">Sobre</Link>
     </Layout>
   )
 }
