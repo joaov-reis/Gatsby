@@ -6,11 +6,11 @@ export default function IndexPage () {
   return (
     <Layout title="Home Page">
       <h3>Olá Mundo Gatsby!</h3>
-      <p>Iniciando com os primeiros componentes do React no Gatsby</p>
-      <p>Outro paragrafo</p>
+      <p>primeiro paragrafo</p>
+      <p>segundo paragrafo</p>
       <Link to="/about">Sobre</Link>
     </Layout>
   )
 }
 
-export const Head = () => <title>Home Page</title>
+export const Head = () => <title>Pagina inicial</title>
