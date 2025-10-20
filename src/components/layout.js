@@ -12,7 +12,7 @@ export default function Layout({children}) { //Desestruturação de objeto
           <Link to="/">Início</Link>
           
           <Link to="/pagina1">Formulario Netlify</Link>
-          
+          <Link to="/pagina4">Formulario React</Link>
 
           <Link to="/pagina2">Dados Externos</Link>
           <Link to="/pagina3">Dados Internos</Link>
