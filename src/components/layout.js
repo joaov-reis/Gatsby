@@ -10,6 +10,10 @@ export default function Layout({children}) { //Desestruturação de objeto
         <h3>Estudos de Jamstack - Gatsby</h3>
         <nav className="topnav">
           <Link to="/">Início</Link>
+          
+          <Link to="/pagina1">Formulario Netlify</Link>
+          
+
           <Link to="/pagina2">Dados Externos</Link>
           <Link to="/pagina3">Dados Internos</Link>
         </nav>
