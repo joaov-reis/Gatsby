@@ -20,7 +20,7 @@ export default function Ufs({setOpcaoUf}){
     function handleChange(event){
         setOpcaoUf({id: event.target.value, nome: event.target[event.target.selectedIndex].text})
     }
-
+        
     return(
         <select name="uf" onChange={handleChange}>
             {options.map(estado => {

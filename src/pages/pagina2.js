@@ -8,6 +8,7 @@ export default function Pagina2(){
 
     return(
         <Layout>
+                <h3>Dados Externos</h3>
                 <Ufs setOpcaoUf = {setOpcaoUf} />
                 <Municipios uf = {opcaoUf.id} />
         </Layout>

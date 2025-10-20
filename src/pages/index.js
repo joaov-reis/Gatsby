@@ -1,7 +1,5 @@
 import * as React from "react" //Pega tudo que está dentro do módulo "React"
-import { Link } from "gatsby"  //Pega tudosomente o elemento "link" que está dentro do módulo "gatsby"
 import Layout from "../components/layout"
-import Ufs from "../components/Ufs"
 
 export default function IndexPage () {
   return (
