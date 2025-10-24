@@ -1,33 +1,44 @@
 import React from "react"; //Pega tudo que está dentro do módulo "React"
 import Layout from "../components/layout";
-import { useStaticQuery, graphql } from "gatsby";
+import { useStaticQuery, graphql, Link } from "gatsby";
 
 export default function BlogPage () {
 
   const data = useStaticQuery(graphql`
     query {
-      allFile {
+      allMdx (sort: {frontmatter: {date: DESC}}){
         nodes {
-          name
+          frontmatter {
+            date (formatString: "DD/MM/YYYY")
+            title
+            slug
+          }
+          id
+          excerpt
         }
       }
     }
   `)
 
+  const posts = data.allMdx.nodes;
+
   return (
     <Layout>
         <p>Esses são os últimos posts:</p>
-        <ul>
           {
-            data.allFile.nodes.map(item => (
-              <li key={item.name}>
-                {item.name}
-              </li>
+            posts.map(item => (
+              <article key={item.id}>
+                <h2>
+                  <Link to={`/${item.frontmatter.slug}`}>
+                    {item.frontmatter.title}
+                  </Link>
+                </h2>
+                <p>Posted: {item.frontmatter.date}</p>
+                <p>{item.excerpt}</p>
+              </article>
             ))
           }
-        </ul>
     </Layout>
-
   )
 }
 
