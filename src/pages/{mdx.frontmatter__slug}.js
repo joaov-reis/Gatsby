@@ -11,7 +11,7 @@ export default function BlogPost ({ data, children }) {
     <Layout>
       <h2>{data.mdx.frontmatter.title}</h2>
       <p>Data: {data.mdx.frontmatter.date}</p>
-      <GatsbyImage image={getImage(data.mdx.frontmatter.hero_image)} alt={data.mdx.frontmatter.hero_image_alt}/>
+      <GatsbyImage image={image} alt={data.mdx.frontmatter.hero_image_alt}/>
       {children}
     </Layout>
   )
