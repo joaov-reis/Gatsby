@@ -6,15 +6,14 @@ export default function ProductPage () {
 
   const data = useStaticQuery(graphql`
     query {
-      allMdx (sort: {frontmatter: {date: DESC}}){
+      allMdx {
         nodes {
           frontmatter {
-            date (formatString: "DD/MM/YYYY")
             title
             slug
           }
-          id
-          excerpt
+        id
+        excerpt
         }
       }
     }
@@ -33,7 +32,6 @@ export default function ProductPage () {
                     {item.frontmatter.title}
                   </Link>
                 </h2>
-                <p>Posted: {item.frontmatter.date}</p>
                 <p>{item.excerpt}</p>
               </article>
             ))

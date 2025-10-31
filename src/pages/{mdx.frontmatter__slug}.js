@@ -10,7 +10,6 @@ export default function BlogPost ({ data, children }) {
   return (
     <Layout>
       <h2>{data.mdx.frontmatter.title}</h2>
-      <p>Data: {data.mdx.frontmatter.date}</p>
       <GatsbyImage image={image} alt={data.mdx.frontmatter.hero_image_alt}/>
       {children}
     </Layout>
@@ -22,7 +21,6 @@ export const query = graphql`
     mdx(id: {eq: $id}) {
       frontmatter {
         title
-        date(formatString: "DD/MM/YYYY")
         hero_image_alt
         hero_image_credit_link
         hero_image_credit_text
