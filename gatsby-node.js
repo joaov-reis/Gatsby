@@ -18,21 +18,19 @@ export const sourceNodes = async ({actions, createNodeId, createContentDigest}) 
         });
     });
 
-    const postResponse = await fetch("https://jsonplaceholder.typicode.com/posts")
-    const posts = await postResponse.json();
+    const commentsResponse = await fetch("https://jsonplaceholder.typicode.com/comments")
+    const comments = await commentsResponse.json();
 
-    posts.forEach(post => {
+    comments.forEach(comment => {
         createNode({
-            ...post, //notação Spread
-            id: createNodeId(`Post-${post.id}`),
+            ...comment, //notação Spread
+            id: createNodeId(`Comment-${comment.id}`),
             parent: null,
             children: [],
             internal: {
-                type: "Post",
-                contentDigest: createContentDigest(post),
+                type: "comment",
+                contentDigest: createContentDigest(comment),
             }
         });
     });
-
-
 }
