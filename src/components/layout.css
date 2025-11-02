@@ -3,23 +3,29 @@
   height: 95vh;
   display: grid;
   grid: "header" auto "main" 1fr "footer" auto / 1fr;
-  background-color: aliceblue;
+  background-color: #f5f5dc;
+  
 }
 
 .header {
   grid-area: header;
-  background-color: aquamarine;
+  background-color: #927e61;
   padding: 10px;
+  text-align: center;
 }
 
 .main {
   grid-area: main;
+  text-align: center;
   padding: 10px;
 }
 
 .topnav {
   overflow: hidden;
-  background-color: #AECFDF;
+  background-color: #f5f5dc;
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
 }
 
 .topnav a {
@@ -32,8 +38,9 @@
 }
 
 .topnav a:hover {
-  background-color: #9F9FAD;
+  background-color: #5e503f;
   color: black;
+  
 }
 
 input[type=text], input[type=email], select, textarea {

@@ -3,7 +3,7 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby`,
+    title: `Mati®`,
     siteUrl: `https://www.infnet.edu.br`,
   },
   plugins: [

@@ -4,7 +4,7 @@ import Layout from "../components/layout";
 export default function Sac(){
     return(
         <Layout>
-            <h3>Entre em Contato:</h3>
+            <h3>Teve algum problema com nosso produto ou deseja deixar uma avaliação? Entre em Contato:</h3>
             <div className="container">
                 <form name="form_estatico" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
                 <input type="hidden" name="form-name" value="form_estatico" />
@@ -15,6 +15,10 @@ export default function Sac(){
                 <label>
                     Email
                     <input type="email" name="email"/>
+                </label>
+                <label>
+                    Telefone
+                    <input type="text" name="telefone"/>
                 </label>
                 <label>
                     Assunto
@@ -32,4 +36,4 @@ export default function Sac(){
     )
 }
 
-export const Head = () => <title>Formulário Estático</title>;
+export const Head = () => <title>Formulário SAC</title>;

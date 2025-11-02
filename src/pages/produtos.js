@@ -23,7 +23,7 @@ export default function ProductPage () {
 
   return (
     <Layout>
-        <p>Esses são os últimos posts:</p>
+        <h3>Confira nossos principais produtos</h3>
           {
             products.map(item => (
               <article key={item.id}>
@@ -40,4 +40,4 @@ export default function ProductPage () {
   )
 }
 
-export const Head = () => <title> Nossos produtos</title>
+export const Head = () => <title>Nossos produtos</title>
