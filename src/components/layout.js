@@ -18,13 +18,12 @@ export default function Layout({children}) { //Desestruturação de objeto
   return (
     <main className="layout">
       <div className="header">
-        <h3>{data.site.siteMetadata.title}</h3>
+        <h1>{data.site.siteMetadata.title}</h1>
         <nav className="topnav">
           <Link to="/">Início</Link>
           <Link to="/produtos">Produtos</Link>
           <Link to="/sac">SAC</Link>
           <Link to="/reviews">Reviews</Link>
-          <Link to="/pagina2">Dados Externos</Link>
         </nav>
       </div>
       <div className="main">

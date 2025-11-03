@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import Layout from '../components/layout';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
-export default function BlogPost ({ data, children }) {
+export default function ProductsPage ({ data, children }) {
 
   const image = getImage(data.mdx.frontmatter.hero_image);
   
@@ -27,7 +27,8 @@ export const query = graphql`
         hero_image {
           childImageSharp {
             gatsbyImageData(
-              width: 600
+              width: 500
+              height: 500
               placeholder: BLURRED
               formats: [AUTO, WEBP, AVIF]
             )

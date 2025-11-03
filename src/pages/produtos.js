@@ -2,7 +2,7 @@ import React from "react"; //Pega tudo que está dentro do módulo "React"
 import Layout from "../components/layout";
 import { useStaticQuery, graphql, Link } from "gatsby";
 
-export default function ProductPage () {
+export default function ProductsPage () {
 
   const data = useStaticQuery(graphql`
     query {
@@ -11,6 +11,17 @@ export default function ProductPage () {
           frontmatter {
             title
             slug
+            hero_image_alt
+            hero_image {
+          childImageSharp {
+            gatsbyImageData(
+              width: 500
+              height: 500
+              placeholder: BLURRED
+              formats: [AUTO, WEBP, AVIF]
+            )
+          }
+        }
           }
         id
         excerpt

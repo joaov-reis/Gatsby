@@ -5,6 +5,7 @@
   grid: "header" auto "main" 1fr "footer" auto / 1fr;
   background-color: #f5f5dc;
   color: #5e503f;
+  font-family: 'Trebuchet MS', sans-serif;  
 }
 
 .header {
@@ -12,13 +13,14 @@
   background-color: #ceb083;
   padding: 10px;
   text-align: center;
+  font-family: 'Trebuchet MS', sans-serif;
 }
 
 .main {
   grid-area: main;
   text-align: center;
   padding: 10px;
-  color: #5e503f; 
+  color: #5e503f;
 }
 
 .topnav {

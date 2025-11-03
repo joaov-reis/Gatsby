@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 
 export default function IndexPage () {
   return (
-    <Layout title="Home Page">
+    <Layout title="Página inicial">
       <h3>Bem vindo a Mati®</h3>
       <p>
         A Mati® acredita que os melhores dias começam com as melhores manhãs. Por isso desenvolvemos uma linha
