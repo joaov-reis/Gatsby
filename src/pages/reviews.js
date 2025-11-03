@@ -20,6 +20,8 @@ export default function Reviews() {
         <Layout>
             <h3>Reviews</h3>
             <h4>Últimas avaliações de nossos clientes</h4>
+
+             <div className="reviewTable">
             <table width="900px" border={1} cellPadding={10} cellSpacing={0}>
                 <tr>
                 <th>Usuário</th>
@@ -35,6 +37,7 @@ export default function Reviews() {
                 );
                 })}
             </table>
+            </div>
         </Layout>
     );
 }

@@ -6,7 +6,7 @@ export default function IndexPage () {
     <Layout title="Home Page">
       <h3>Bem vindo a Mati®</h3>
       <p>
-        A Mati, acredita que os melhores dias começam com as melhores manhãs. Por isso desenvolvemos uma linha
+        A Mati® acredita que os melhores dias começam com as melhores manhãs. Por isso desenvolvemos uma linha
         completa de produtos matinais saudáveis, naturais e nutritivos para oferecer leveza e equilíbrio no seu
         cotidiano. Nosso compromisso vai além do sabor: buscamos promover o bem-estar e incentivar um estilo de
         vida mais saudável e sustentável, sem comprometer o sabor. Trabalhamos com fornecedores responsáveis,

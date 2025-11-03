@@ -23,7 +23,7 @@ export default function ProductPage () {
 
   return (
     <Layout>
-        <h3>Confira nossos principais produtos</h3>
+        <h4>Confira nossos principais produtos</h4>
           {
             products.map(item => (
               <article key={item.id}>
@@ -40,4 +40,4 @@ export default function ProductPage () {
   )
 }
 
-export const Head = () => <title>Nossos produtos</title>
+export const Head = () => <title> Nossos produtos</title>
